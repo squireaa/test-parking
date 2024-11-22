@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <div id="screen">
+        <!-- Header -->
+        <div class="head-bar">
+            <img src="./images/crest.png" alt="UR Crest">
+            <h1>UR Parking</h1>
+            <button id="burger">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+        </div>
+        <nav class="navigation-bar" id="nav-menu">
+            <ul>
+                <li>
+                    <span class="material-icons">
+                        home
+                    </span>
+                    Home
+                </li>
+                <li>
+                    <span class="material-icons">
+                        description
+                    </span>
+                    Parking Rules
+                </li>
+                <li>
+                    <span class="material-icons">
+                        warning
+                    </span>
+                    Pay a Ticket
+                </li>
+                <li>
+                    <span class="material-icons">
+                        person
+                    </span>
+                    Profile
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Profile Header -->
+        <div class="profile-block-header">
+            <span class="profile-netid">JD77</span>
+            <div class="profile-button-container">
+                <!-- Buttons for toggling modes -->
+                <button id="profile-edit-id" class="profile-button profile-edit-button">Edit</button>
+                <button id="profile-save-id" class="profile-button profile-save-button profile-edit-hidden">Save</button>
+                <a href="map.html" class="profile-button profile-logout-button">Logout</a>
+            </div>
+        </div>
+
+        <!-- Profile Content for View Mode -->
+        <div id="profile-content"></div>
+
+        <!-- Profile Content for Edit Mode -->
+        <div id="profile-edit-content" class="profile-edit-hidden"></div>
+    </div>
+
+    <script src="profile.js" type="module"></script>
+</body>
+</html>

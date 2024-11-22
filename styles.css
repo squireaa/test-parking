@@ -1,0 +1,313 @@
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+	font-family: 'Inter', sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	overflow: scroll;
+	position: relative;
+	/* background-color: rgb(150, 227, 150); */
+}
+
+#screen > img {
+	transform: translate(-10%, -10%) scale(.7);
+	position: absolute;
+	z-index: -1;
+}
+
+#screen::-webkit-scrollbar {
+	display: none;
+}
+
+/* UR Parking */
+.head-bar {
+	position: fixed;
+	width: 300px;
+	height: 60px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	color: #000066;
+}
+
+.head-bar img {
+	height: 40px;
+	margin-left: .75rem;
+}
+
+.head-bar h1 {
+	margin-left: .75rem;
+}
+
+
+.head-bar span {
+	margin-left: -1rem;
+}
+
+/* Profile CSS */
+/* Profile Block */
+.profile-block-header{
+	margin-top: 60px;
+	height: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	color: black;
+	font-size: large;
+}
+.profile-netid{
+	font-weight: bold;
+	margin-left: 20px;
+}
+.profile-button-container{
+    display: flex;           
+    justify-content: center; 
+    gap: 10px;               
+}
+.profile-button{
+	display: inline-block;
+	text-align: center;
+	background-color:#D42020;
+	border-color: transparent;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.profile-button:hover{
+    background-color: #A61818; 
+}
+.profile-edit-button{
+	padding: 6px 20px;
+	margin-left: 4rem;
+}
+
+.profile-logout-button{
+	padding: 6px 10px;
+	margin-right: 1rem;
+}
+
+.profile-save-button{
+	margin-left: 8.5rem;
+	padding: 6px 20px;
+}
+
+/* Profile Content */
+#profile-content, #profile-edit-content{
+	height: 300px;
+	margin-left: 20px;
+	margin-top: 10px;
+	
+}
+.profile-data{
+	display:grid;
+}
+.profile-item{
+	font-size: large;
+	font-weight: bolder;
+}
+.profile-ans{
+	margin-bottom: 5px;
+	border-bottom: 0.1px solid lightgrey;
+}
+
+/* Editable Input */
+.profile-answer-input {
+    width: 100%;
+	font-size: small;
+    padding: 2.8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.profile-edit-hidden {
+    display: none;
+}
+
+#colored-map {
+	visibility: hidden;
+}
+
+#regular-map {
+	visibility: visible;
+}
+
+.head-bar button {
+	width:35px;
+	margin-left: 2rem;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.navigation-bar {
+	background-color: white;	
+	position: fixed;
+	margin-top: 60px;
+	width: 300px;
+	height: 168px;
+	visibility: hidden;
+}
+
+.navigation-bar ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.navigation-bar li {
+	border: 1px solid lightgray;
+	padding: .5rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.filter-bottom {
+	visibility: hidden;
+	height: 380px;
+	position: fixed;
+	margin-top: 150px;
+	width: 300px;
+	background-color: rgb(212, 32, 32);
+}
+
+.filter-white {
+	width: 255px;
+	height: 330px;
+	background-color: white;
+	display: block;
+	margin-inline: auto;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.filter-tab {
+	height: 40px;
+	position: fixed;
+	width: 100px;
+	background-color: rgb(212, 32, 32);
+	margin-left: 190px;
+	margin-top: -30px;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	justify-content: center;
+	font-weight: 600;
+	letter-spacing: .5px;
+	cursor: pointer;
+}
+
+.filter-closed {
+	visibility: visible;
+	height: 20px;
+	position: fixed;
+	margin-top: 511px;
+	width: 300px;
+	background-color: rgb(212, 32, 32);
+}
+
+.filter-tab-closed {
+	height: 40px;
+	position: fixed;
+	width: 100px;
+	background-color: rgb(212, 32, 32);
+	margin-left: 190px;
+	margin-top: -30px;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	justify-content: center;
+	font-weight: 600;
+	letter-spacing: .5px;
+	cursor: pointer;
+}
+
+.search-bar {
+	display: flex;
+	width: 230px;
+	padding: 10px;
+	border-radius: 999px;
+	border: 2px solid black;
+}
+
+.filter-white p {
+	font-size: x-small;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.checkbox-area {
+	display: flex;
+	flex-direction: column;
+}
+
+.location-buttons {
+	display: flex;
+	gap: 5px;
+	overflow: scroll;
+	width: 250px;
+	margin-bottom: 5px;
+	margin-top: -15px;
+}
+
+.location-buttons button {
+	width: 200px;
+	height: 40px;
+	flex: 0 0 auto;
+	font-weight: 800;
+	background-color: rgb(212, 32, 32);
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+.parking-buttons {
+	display: flex;
+	gap: 5px;
+	overflow: scroll;
+	width: 250px;
+	margin-bottom: -10px;
+	margin-top: -15px;
+}
+
+.parking-buttons button {
+	width: 60px;
+	height: 40px;
+	flex: 0 0 auto;
+	font-weight: 800;
+	background-color: rgb(212, 32, 32);
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+#apply-button {
+	display: block;
+	width: 100px;
+	margin-inline: auto;
+	margin-top: 10px;
+	height: 40px;
+	font-weight: 800;
+	border-radius: 0;
+	background-color: rgb(212, 32, 32); 
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
